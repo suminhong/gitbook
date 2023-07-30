@@ -16,7 +16,7 @@ $$f(x) = x * e^{2 pi i \xi x}$$sdsf
 
 
 
-```
+```bash
 prompt_kubectx () {
   if [[ $(kubectx -c) == *"prod"* ]]; then
     prompt_segment bg red $(kubectx -c)%{% raw %}
@@ -59,7 +59,6 @@ def lambda_handler(event, context):
 
 yaml
 
-````yaml
 ```yaml
 image:
   # image.repository -- Redash image name used for server and worker pods
@@ -69,12 +68,10 @@ image:
   # image.pullPolicy - Image pull policy
   pullPolicy: IfNotPresent
 ```
-````
 
 terraform
 
-````
-```terraform
+```hcl
 resource "aws_kms_key" "this" {
   description = local.tf_desc
 
@@ -86,12 +83,8 @@ resource "aws_kms_key" "this" {
   )
 }
 ```
-````
 
-hcl
-
-````hcl
-```terraform
+```hcl
 resource "aws_kms_key" "this" {
   description = local.tf_desc
 
@@ -103,5 +96,4 @@ resource "aws_kms_key" "this" {
   )
 }
 ```
-````
 
