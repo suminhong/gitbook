@@ -4,7 +4,7 @@ description: 맥 초기 세팅 시 설치할 것들
 
 # ⬇ Install
 
-### 0. homebrew
+### 1. Homebrew
 
 {% code fullWidth="true" %}
 ```bash
