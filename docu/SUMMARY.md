@@ -5,7 +5,7 @@
 ## 🍎 MAC Setting
 
 * [⬇️ Install](mac-setting/install.md)
-* [📌 iterm 꾸미기](mac-setting/iterm.md)
+* [💻 iterm 꾸미기](mac-setting/iterm.md)
 
 ***
 
