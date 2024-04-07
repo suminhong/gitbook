@@ -2,7 +2,7 @@
 description: 맥 초기 세팅 시 설치할 것들
 ---
 
-# ⬇ Install
+# Install
 
 ### 1. Homebrew
 
