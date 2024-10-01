@@ -4,13 +4,9 @@ description: Terminal 꾸미기
 
 # iterm 꾸미기
 
-#### zsh 설치
+#### oh-my-zsh 설치
 
 ```bash
-# zsh 설치
-brew install zsh
-
-# oh-my-zsh 설치
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
@@ -26,11 +22,9 @@ ZSH_THEME="agnoster"
 # 맨 아래에 추가 - 유저명 커스텀
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-    prompt_segment black default "%(!.%
-{% raw %}
+    prompt_segment black default "%(!.%{% raw %}
 {%F{yellow}%}
-{% endraw %}
-.)$USER 🚀"
+{% endraw %}.)$USER 🚀"
   fi
 }
 

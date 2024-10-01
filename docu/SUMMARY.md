@@ -6,6 +6,7 @@
 
 * [Install](mac-setting/install.md)
 * [iterm 꾸미기](mac-setting/iterm.md)
+* [alias](mac-setting/alias.md)
 
 ## 🙌 IaC
 
