@@ -30,10 +30,17 @@ brew --version
 
 ### 3. spectacle
 
-{% embed url="https://www.spectacleapp.com/" %}
+[https://github.com/eczarny/spectacle/releases/download/1.2/Spectacle+1.2.zip](https://github.com/eczarny/spectacle/releases/download/1.2/Spectacle+1.2.zip)
 
-화면 분할 앱. 무료인데 유료만큼 함
+화면 분할 앱. 무료인데 유료만큼 함 (현재는 deprecate되었는데 위 링크로 다운 가능. 보통은 rectangle로 넘어감)
 
+### 4. brew로 각종 도구 설치
 
-
-가장 중요한 터미널 세팅은 다음 글에서..
+```bash
+brew install iterm2 zsh awscli weaveworks/tap/eksctl gjbae1212/gossm/gossm saml2aws tfenv terraform-docs pre-commit kubectl kubectx k9s helm git gh wget telnet mysql python watch poetry iproute2mac lsd
+brew install docker --cask
+brew install cask docker-compose
+brew install --cask openlens
+# spectacle 대신 rectangle 사용하려면
+brew install --cask rectangle
+```
