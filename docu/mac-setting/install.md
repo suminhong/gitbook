@@ -38,9 +38,5 @@ brew --version
 
 ```bash
 brew install iterm2 zsh awscli weaveworks/tap/eksctl gjbae1212/gossm/gossm saml2aws tfenv terraform-docs pre-commit kubectl kubectx k9s helm git gh wget telnet mysql python watch poetry iproute2mac lsd
-brew install docker --cask
-brew install cask docker-compose
-brew install --cask openlens
-# spectacle 대신 rectangle 사용하려면
-brew install --cask rectangle
+brew install --cask docker openlens rectangle
 ```
