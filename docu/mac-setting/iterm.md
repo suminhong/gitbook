@@ -22,9 +22,7 @@ ZSH_THEME="agnoster"
 # 맨 아래에 추가 - 유저명 커스텀
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-    prompt_segment black default "%(!.%{% raw %}
-{%F{yellow}%}
-{% endraw %}.)$USER 🚀"
+    prompt_segment black default "%(!.%{%F{yellow}%}.)$USER 🚀"
   fi
 }
 
@@ -60,9 +58,7 @@ vi ~/.oh-my-zsh/themes/agnoster.zsh-theme
 prompt_end() {
   if [[ -n $CURRENT_BG ]]; then
     # 이 부분을
-    # echo -n " %
-{% raw %}
-{%k%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR"
+    # echo -n " %{%k%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR"
     # 이렇게 변경
     echo -n " %{%k%F{$CURRENT_BG}%}🚀"
   else
@@ -77,11 +73,7 @@ prompt_kubectx () {
   if [[ $(kubectx -c) == *"prod"* ]]; then
     prompt_segment bg red $(kubectx -c)%{%F{white}%}:%{%F{cyan}%}$(kubens -c)
   else
-    prompt_segment bg yellow $(kubectx -c)%{%F{white}%}:%{%F{cyan}%}
-{% endraw %}
-
-
-$(kubens -c)
+    prompt_segment bg yellow $(kubectx -c)%{%F{white}%}:%{%F{cyan}%}$(kubens -c)
   fi
 }
 
